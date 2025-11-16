@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #898989;
+    background-color: black;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: normal;
+    font-weight: 400;
+    overflow-x: hidden !important;
+}
+.home{
+
+    position: relative;
+ 
+    height: 600px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+   
+}
+.LEFT{
+    
+    height: 500px;
+    width: 850px;
+    background-color: rgb(45, 54, 58);
+    position: absolute;
+    left: 20PX;
+    border-radius: 10PX;
+    padding-top: 80px;
+    padding-left: 30px;
+    overflow: hidden;
+    h1{
+        font-size: 90px;
+       
+      
+    }
+    
+
+
+}
+.LEFT::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.6s ease;
+  }
+  .LEFT:hover::before {
+    left: 100%;
+  }
+
+.RIGHT{
+    position: absolute;
+    height: 350px;
+    width: 500px;
+    background: rgba(56, 138, 138, 0.671);   
+    position: relative;
+    left: 700px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    h4{
+        font-style: unset;
+    font-weight: 900;
+    text-decoration: none;
+    }
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+        position: relative;
+    z-index: 9;
+    font-weight: 400;
+    }
+  
+}
+.RIGHT h4:hover a {
+     color: #898989;
+     font-weight: 550;
+}
+    
+.b1{
+    display: flex;
+    padding-left: 10px;
+    margin-top: 50px;
+  
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    margin-left: 33px;
+}
+
+ 
+ .b2{
+    border-radius: 5PX;
+    display: flex;
+    padding-left: 10px;
+    margin-top: 50px;
+    
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.b3{
+    height: 50px;
+    width: 100%;
+    
+    margin-top: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    padding-top: 13px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.RIGHT h4 {
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid whitesmoke;
+    border-radius: 10px; 
+    font-weight: 500;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+     overflow: Hidden;
+     
+}
+
+.RIGHT h4::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-color: rgb(45, 54, 58);
+    left: 0;
+    bottom: -300%;
+    border-radius: 50%;
+    transition: all ease 0.7s;
+   color: #898989;
+}
+
+.RIGHT h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+
+
+
+
+
+.b3 h4 {
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+   
+    font-weight: 500;
+    color: wheat;
+    transition: all ease 0.7s;
+    position: relative;
+    font-size: 18px;
+     overflow: Hidden;
+     color: #fff;
+}
+
+.b3 h4::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 500px;
+    background-color: rgb(45, 54, 58);
+    left: 0;
+    
+    bottom: -300%;
+    border-radius: 50%;
+    transition: all ease 0.7s;
+}
+
+.b3 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+.b3 h4:hover a {
+    color: #898989;
+    font-weight: 550;
+}
+
+
+
+
+@media (max-width:600px) {
+  
+    .LEFT{
+
+        width: 500px;
+        height: 430px;
+        left: 0;
+        border-radius: 0;
+        padding-left: 10px;
+        h1{
+            font-size: 50px;
+        }
+    }
+ 
+.RIGHT{
+    width: 350px;
+    left: 5px;
+    top: 260px;
+    a{
+        font-size: 10;
+    }
+}
+.b1{
+    margin-left: -10px;
+    h4{
+     padding-left: 10px;
+
+    }
+    
+}
+.b2{
+    margin-left: -10px;
+    h4{
+     padding-left: 10px;
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+}
+
